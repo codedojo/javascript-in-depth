@@ -1,1 +1,1 @@
-# javascript-in-depth
+# JavaScript в деталях
