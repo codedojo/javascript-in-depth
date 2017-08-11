@@ -1,0 +1,15 @@
+{
+    "name": "scope-exercises",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "mocha",
+        "test:watch": "mocha -w"
+    },
+    "dependencies": {
+        "babel-core": "^5.4.3",
+        "chai": "^4.1.1",
+        "escope": "^1.0.3",
+        "estraverse": "^4.1.0",
+        "mocha": "^3.5.0"
+    }
+}
