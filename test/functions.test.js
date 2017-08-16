@@ -12,7 +12,7 @@ let exercises = [
             },
             {
                 description: '`limit` возращает функцию',
-                assertion: limit => assert.equal(typeof limit, 'function')
+                assertion: limit => assert.equal(typeof limit(), 'function')
             },
             {
                 description: '`limit` ограничивает количество вызовов функции',
@@ -36,7 +36,7 @@ let exercises = [
             },
             {
                 description: '`protect` возращает функцию',
-                assertion: protect => assert.equal(typeof protect, 'function')
+                assertion: protect => assert.equal(typeof protect(), 'function')
             },
             {
                 description: '`protect` защищает вызов функции паролем',
@@ -59,7 +59,7 @@ let exercises = [
             },
             {
                 description: '`createCounter` возращает функцию',
-                assertion: createCounter => assert.equal(typeof createCounter, 'function')
+                assertion: createCounter => assert.equal(typeof createCounter(), 'function')
             },
             {
                 description: 'Вызывая `createCounter` без аргументов, используются значения параметров по умолчанию',
