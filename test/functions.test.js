@@ -144,6 +144,18 @@ let exercises = [
 
                     assert.equal(list.getLength(), 0);
                 }
+            },
+            {
+                description: '`createList.toString` возращает элементы списка в виде строки',
+                assertion: createList => {
+                    let list = createList();
+
+                    list.add(1);
+                    list.add(2);
+                    list.add(3);
+                    
+                    assert.equal(list.toString(), '1,2,3');
+                }
             }
         ]
     },
