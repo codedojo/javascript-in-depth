@@ -1,9 +1,15 @@
 # JavaScript в деталях
 
-## Обласить видимости
+## Функции
 
 Упражнения:
 
+```sh
+git checkout function_exercises
 ```
-git checkout scope_exercises
+
+Решения упражнений:
+
+```sh
+git checkout function_exercises_completed
 ```
