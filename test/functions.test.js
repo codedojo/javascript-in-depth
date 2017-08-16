@@ -12,7 +12,7 @@ let exercises = [
             },
             {
                 description: '`limit` возращает функцию',
-                assertion: limit => assert.equal(typeof limit(), 'function')
+                assertion: limit => assert.equal(typeof limit(() => {}, 2), 'function')
             },
             {
                 description: '`limit` ограничивает количество вызовов функции',
@@ -36,7 +36,7 @@ let exercises = [
             },
             {
                 description: '`protect` возращает функцию',
-                assertion: protect => assert.equal(typeof protect(), 'function')
+                assertion: protect => assert.equal(typeof protect(42, '123456'), 'function')
             },
             {
                 description: '`protect` защищает вызов функции паролем',
@@ -169,7 +169,7 @@ let exercises = [
             },
             {
                 description: '`bind` возращает функцию',
-                assertion: bind => assert.equal(typeof bind(), 'function')
+                assertion: bind => assert.equal(typeof bind(function() {}, {}), 'function')
             },
             {
                 description: '`bind` привязывает указанное значение `this` к передаваемой функции',
