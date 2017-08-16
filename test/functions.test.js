@@ -21,7 +21,7 @@ let exercises = [
 
                     assert.equal(limited(), 42);
                     assert.equal(limited(), 42);
-                    assert.equal(limited(), undefined);
+                    assert.equal(limited(), false);
                 }
             }
         ]
