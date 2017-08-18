@@ -1,5 +1,23 @@
 # JavaScript в деталях
 
+Для установки зависимостей в терминале введите команду
+
+```
+npm install
+```
+
+Для запуска тестов введите команду
+
+```
+npm test
+```
+
+Для запуска тестов в режиме наблюдения введите команду
+
+```
+npm run test:watch
+```
+
 ## Область видимости
 
 [Упражнения](https://github.com/codedojo/javascript-in-depth/tree/scope_exercises):
