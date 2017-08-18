@@ -1,9 +1,13 @@
-# JavaScript в деталях
+# JavaScript в деталях - Объекты
 
-## Обласить видимости
-
-Упражнения:
+Ветка с упражнениями:
 
 ```
-git checkout scope_exercises
+git checkout objects_exercises
+```
+
+Ветка с решениями:
+
+```
+git checkout objects_exercises_completed
 ```
