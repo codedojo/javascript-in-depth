@@ -20,7 +20,7 @@ npm run test:watch
 
 ## Область видимости
 
-[Упражнения](https://github.com/codedojo/javascript-in-depth/tree/scope_exercises):
+[Упражнения](https://github.com/codedojo/javascript-in-depth/tree/scope_exercises)
 
 ```sh
 git checkout scope_exercises
