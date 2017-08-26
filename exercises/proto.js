@@ -3,7 +3,10 @@
  * со свойствами `name: 'Benedict'` и `hp: 100`
  */
 
-// ???
+let character = {
+    'name': 'Benedict',
+    'hp': 100
+}
 
 
 
@@ -12,7 +15,9 @@
  * со свойством `weapon: 'Sword'`
  */
 
-// ???
+let warrior = {
+    'weapon': 'Sword'
+}
 
 
 
@@ -21,7 +26,10 @@
  * со свойствами `mp: 100` и `spell: 'Holy Blast'`
  */
 
-// ???
+knight = {
+    'mp': 100,
+    'spell': 'Holy Blast'
+}
 
 
 /**
@@ -29,8 +37,7 @@
  * используя свойство `__proto__`
  */
 
-// ???
-
+warrior.__proto__ = character;
 
 
 /**
@@ -38,7 +45,7 @@
  * используя свойство `__proto__`
  */
 
-// ???
+knight.__proto__ = warrior;
 
 
 

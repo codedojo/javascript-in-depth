@@ -18,7 +18,7 @@ knight.__proto__ = warrior;
  * TODO: Сделайте так, чтобы у всех объектов появился доступ к свойству `race: 'Human'`
  */
 
-// ???
+character.race = 'Human';
 
 
 
@@ -26,7 +26,7 @@ knight.__proto__ = warrior;
  * TODO: Сделайте так, чтобы у `warrior` и `knight` появилось свойство `hasShield: true`
  */
 
-// ???
+warrior.hasShield = true;
 
 
 
@@ -34,7 +34,7 @@ knight.__proto__ = warrior;
  * TODO: Сделайте так, чтобы у `knight` появилось свойство `spell: 'Holy Blast'`
  */
 
-// ???
+knight.spell = 'Holy Blast';
 
 
 

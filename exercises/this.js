@@ -5,7 +5,9 @@
  * - при вызове без `new` вернет глобальный объект
  */
 
-// ???
+function Character() {
+    return this;
+}
 
 
 /**
@@ -15,7 +17,9 @@
  * - при вызове без `new` вернет объект не являющийся глобальный объектом
  */
 
-// ???
+function Warrior() {
+    return Object.create(null);
+}
 
 
 

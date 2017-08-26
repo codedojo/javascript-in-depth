@@ -8,6 +8,13 @@
 
 // ???
 
+Character = {};
+Character.new = function() {
+    return {
+        __proto__: Character
+    }
+}
+
 
 
 module.exports = Character;

@@ -6,8 +6,15 @@
  * используя второй аргумент `Object.create`.
  */
 
-// ???
-
+let character = Object.create(Object.prototype, {
+    name: {
+        value: 'Benedict'
+    }
+}, {
+    hp: {
+        value: 100
+    } 
+});
 
 
 /**
@@ -18,7 +25,11 @@
  * используя второй аргумент `Object.create`.
  */
 
-// ???
+let warrior = Object.create(character, {
+    weapon: {
+        value: 'Sword'
+    }
+})
 
 
 
@@ -30,7 +41,11 @@
  * используя второй аргумент `Object.create`.
  */
 
-// ???
+let knight = Object.create(warrior, {
+    mp: {
+        value: 100
+    }
+})
 
 
 

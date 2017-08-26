@@ -5,6 +5,10 @@
  */
 
 // ???
+let character = {
+    'name': 'Benedict',
+    'hp': 100
+}
 
 
 

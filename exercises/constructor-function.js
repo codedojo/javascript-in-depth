@@ -5,7 +5,10 @@
  * и свойство `hp` со значением 100.
  */
 
-// ???
+function Character(name) {
+    this.name = name;
+    this.hp = 100;
+}
 
 
 
@@ -15,7 +18,7 @@
  * и поместите его в переменную `character`.
  */
 
-// ???
+let character = new Character('Benedict');
 
 
 
