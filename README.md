@@ -53,3 +53,9 @@ git checkout objects_exercises
 ```
 git checkout objects_exercises_completed
 ```
+
+## Прототипы (https://github.com/codedojo/javascript-in-depth/tree/prototypes)
+
+```
+git checkout prototypes
+```
