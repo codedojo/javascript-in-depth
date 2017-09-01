@@ -8,18 +8,10 @@
 git checkout scope_exercises
 ```
 
-## Функции
-
-[Упражнения](https://github.com/codedojo/javascript-in-depth/tree/functions_exercises)
+## [Замыкание](https://github.com/codedojo/javascript-in-depth/tree/closure)
 
 ```
-git checkout functions_exercises
-```
-
-[Решения упражнений](https://github.com/codedojo/javascript-in-depth/tree/function_exercises_completed)
-
-```
-git checkout functions_exercises_completed
+git checkout closure
 ```
 
 ## Объекты
