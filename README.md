@@ -33,3 +33,9 @@ git checkout objects_exercises_completed
 ```
 git checkout prototypes
 ```
+
+## [Обещания](https://github.com/codedojo/javascript-in-depth/tree/promises)
+
+```
+git checkout promises
+```
