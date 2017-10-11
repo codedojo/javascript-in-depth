@@ -1,61 +1,62 @@
 'use strict';
+
 var nodeHelpers = require('./node-helpers'),
     scopeHelpers = require('./scope-helpers'),
     scopeTraverse = require('./scope-traverse');
 
-module.exports = function(code) {
+module.exports = function (code) {
 
-  var depth = 0,
-      result = [];
+    var depth = 0,
+        result = [];
 
-  scopeTraverse(code, {
+    scopeTraverse(code, {
 
-    leave: function(node, scope) {
-      depth--;
-    },
+        leave: function (node, scope) {
+            depth--;
+        },
 
-    enter: function(node, scope) {
+        enter: function (node, scope) {
 
-      var args,
-          name,
-          variables,
-          tabs,
-          scopeResult = [];
+            var args,
+                name,
+                variables,
+                tabs,
+                scopeResult = [];
 
-      scopeResult.push(nodeHelpers.getFunctionString(node));
+            scopeResult.push(nodeHelpers.getFunctionString(node));
 
-      variables = scopeHelpers.getScopeVariablesWithoutArguments(scope);
+            variables = scopeHelpers.getScopeVariablesWithoutArguments(scope);
 
-      scopeResult = scopeResult.concat(
+            scopeResult = scopeResult.concat(
 
-        variables.filter(function eachVariable(variable) {
-          return variable.name !== 'arguments' && variable.defs[0].type !== 'FunctionName';
-        }).map(function eachVariable(variable) {
-          return '- var ' + variable.name;
-        }),
+                variables.filter(function eachVariable(variable) {
+                    return variable.name !== 'arguments' && variable.defs[0].type !== 'FunctionName';
+                }).map(function eachVariable(variable) {
+                    return '- var ' + variable.name;
+                }),
 
-        scope.references.filter(function filterReferences(reference) {
-          // If it's not resolved, it's an implicit global
-          return !reference.resolved
-                 // Already declared in the variables above
-                 || reference.resolved.scope !== scope;;
-        }).map(function eachReference(reference) {
-          return '- ' + reference.identifier.name + ' = ' + '?';
-        })
+                scope.references.filter(function filterReferences(reference) {
+                    // If it's not resolved, it's an implicit global
+                    return !reference.resolved
+                        // Already declared in the variables above
+                        || reference.resolved.scope !== scope;;
+                }).map(function eachReference(reference) {
+                    return '- ' + reference.identifier.name + ' = ' + '?';
+                })
 
-      );
+            );
 
-      scopeResult = scopeResult.concat(nodeHelpers.getReturnStatements(node));
+            scopeResult = scopeResult.concat(nodeHelpers.getReturnStatements(node));
 
-      tabs = Array(depth + 1).join('\t');
-      result = result.concat(scopeResult.map(function mapScopeResults(resultLine) {
-        return tabs + resultLine;
-      }));
+            tabs = Array(depth + 1).join('\t');
+            result = result.concat(scopeResult.map(function mapScopeResults(resultLine) {
+                return tabs + resultLine;
+            }));
 
-      depth++;
-    }
-  });
+            depth++;
+        }
+    });
 
-  return result.join('\n');
+    return result.join('\n');
 
 }
