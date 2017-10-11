@@ -1,11 +1,9 @@
 # JavaScript в деталях
 
-## Область видимости
-
-[Упражнения](https://github.com/codedojo/javascript-in-depth/tree/scope_exercises)
+## [Область видимости](https://github.com/codedojo/javascript-in-depth/tree/scope)
 
 ```sh
-git checkout scope_exercises
+git checkout scope
 ```
 
 ## [Замыкание](https://github.com/codedojo/javascript-in-depth/tree/closure)
@@ -14,18 +12,10 @@ git checkout scope_exercises
 git checkout closure
 ```
 
-## Объекты
-
-[Упражнения](https://github.com/codedojo/javascript-in-depth/tree/objects_exercises)
+## [Объекты](https://github.com/codedojo/javascript-in-depth/tree/objects)
 
 ```
-git checkout objects_exercises
-```
-
-[Решения упражнений](https://github.com/codedojo/javascript-in-depth/tree/objects_exercises_completed)
-
-```
-git checkout objects_exercises_completed
+git checkout objects
 ```
 
 ## [Прототипы](https://github.com/codedojo/javascript-in-depth/tree/prototypes)
