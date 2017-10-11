@@ -1,9 +1,5 @@
 'use strict';
 
-function freeze(object) {
-    return Object.freeze(object);
-}
-
 function deepFreeze(object) {
     let isFreezable = Array.isArray(object) || typeof object === 'object';
     let isFrozen = Object.isFrozen(object);
@@ -18,7 +14,4 @@ function deepFreeze(object) {
 
 
 
-module.exports = {
-    freeze,
-    deepFreeze
-};
+module.exports = deepFreeze;
